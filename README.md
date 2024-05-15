@@ -1,10 +1,10 @@
-# Project Title
-
-LLM Chatbot
+# LLM Chatbot
 
 ### Features:
 - Switch among multiple models
 - Session save and resume
+
+<img src="./docs/images/screenshot.png" width="500">
 
 ## Installation
 
