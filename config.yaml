@@ -1,0 +1,19 @@
+
+models:
+  chatgpt-3.5-turbo:
+    type: "openai" # ensure OPENAI_API_KEY is set in environment variable 
+    model_id: "gpt-3.5-turbo"
+  
+  bedrock-claude-3-sonnet-20240229-v1:
+    type: "bedrock"
+    model_id: "anthropic.claude-3-sonnet-20240229-v1:0"
+    credentials_profile_name: "default" # ensure AWS credentials are set in ~/.aws/credentials and can access the model
+
+  ollama-mistral:
+    type: "ollama"
+    model_id: "mistral" # make sure the model is available for ollama
+
+default_model: "chatgpt-3.5-turbo"
+
+# folder to store chat history
+history_folder: "./history"
